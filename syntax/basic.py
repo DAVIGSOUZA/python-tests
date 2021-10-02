@@ -1,6 +1,7 @@
 print('oi')
 
 # variables definition
+# variables_name_convention
 
 nomeDaVariavel = 'valor da variável'
 
@@ -15,6 +16,13 @@ print(variavelA,variavelB)
 # type number, type boolean -> boleanos declarados sempre com inicial maiúscula
 numero = 2
 boleano = True
+decimal = 2.2 #float
+
+# returna o tipo da variável
+print(type(nomeDaVariavel))
+print(type(numero))
+print(type(boleano))
+print(type(decimal))
 
 
 # strings

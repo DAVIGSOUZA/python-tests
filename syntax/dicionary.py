@@ -28,7 +28,10 @@ print(obj)
 newObj = {
   'chave': 'valor',
   'outra chave': 'deletar',
-  'terceira chave': 'terceiro valor'
+  'string': 'terceiro valor',
+  'numero': 1,
+  'boolean': True,
+  'float': 1.223423
 }
 
 # length
