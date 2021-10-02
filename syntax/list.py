@@ -38,5 +38,22 @@ my_list.remove(my_list[-1])
 print(my_list)
 
 
-#  curso python, continuar em 1:03:20
+#  limpar lista
+my_list.clear()
+print(my_list)
+
+
+complexList = [
+  [1,2,3],
+  [4,5,6],
+  [7,8,9]
+]
+
+print(complexList[0][-1])
+
+
+# define a tuple
+# listas são mutaveis, tuples são imutáveis 
+my_tuple = (11, 'olá', True)
+
 

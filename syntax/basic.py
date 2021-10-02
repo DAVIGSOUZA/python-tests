@@ -28,8 +28,9 @@ print(term.upper())
 
 # concat
 print(term + " " + nomeDaVariavel)
-# python não concatena strings com outros tipos, é preciso converter primeiro.
+# python não concatena tipos diferentes de dados, é preciso separar por virgula ou converter as variáveis
 print(term + " " + str(boleano))
+print(term, boleano)
 
 # length
 print(len(term))
