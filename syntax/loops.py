@@ -50,6 +50,8 @@ while b <= 55:
   a = b
   b = c
 
+
+# loop se repete enquanto houver erro. 1 = error | 0 = no error
 while(1):
   try:
     a = int(input('primeiro valor: '))

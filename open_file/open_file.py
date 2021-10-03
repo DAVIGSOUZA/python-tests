@@ -15,7 +15,7 @@ print("Files in %r: %s" % (cwd, files))
 # "r+" - read / write ???
 # "w" - write
 # "a" - append - adicionar informação ao final do arquivo
-read_file = open("syntax/example.txt","r") 
+read_file = open("open_file/example.txt","r") 
 
 # readable() - retorna boolean - se o arquivo é possível ser lido.
 print(read_file.readable())
@@ -23,21 +23,21 @@ print(read_file.readable())
 read_file.close()
 
 
-read_file = open("syntax/example.txt","r") 
+read_file = open("open_file/example.txt","r") 
 # read() - retorna o conteúdo do arquivo. move o cursor para o fim do arquivo
 print(read_file.read())
 # Sempre lembrar de fechar o arquivo
 read_file.close()
 
 
-read_file = open("syntax/example.txt","r") 
+read_file = open("open_file/example.txt","r") 
 # readline() - retorna conteúdo de uma linha e move o cursor para a próxima
 print(read_file.readline())
 # Sempre lembrar de fechar o arquivo
 read_file.close()
 
 
-read_file = open("syntax/example.txt","r") 
+read_file = open("open_file/example.txt","r") 
 # readlines() - retorna o conteúdo do arquivo em uma lista a partir do cursor, onde cada linha é um elemento do array
 # se o cursor estiver no final do arquivo retorna uma lista vazia
 print(read_file.readlines())
@@ -45,7 +45,7 @@ print(read_file.readlines())
 read_file.close()
 
 
-read_file = open("syntax/example.txt","r") 
+read_file = open("open_file/example.txt","r") 
 # retorna o conteudo da linha daquele index especifico.
 print(read_file.readlines()[0])
 # Sempre lembrar de fechar o arquivo
@@ -55,7 +55,7 @@ read_file.close()
 
 # append
 
-append_file = open("syntax/example.txt","a")
+append_file = open("open_file/example.txt","a")
 # adiciona conteudo ao arquivo
 # \n - adiciona o conteudo em uma nova linha
 append_file.write("\nnovo conteudo no arquivo")
@@ -68,7 +68,7 @@ append_file.close()
 
 # write
 
-write_file = open("syntax/example.txt","w")
+write_file = open("open_file/example.txt","w")
 # reescreve o conteúdo do arquivo, 
 # vá até o arquivo examples edite e rode o script,
 # acesse o arquivo novamente e veja o novo conteúdo
@@ -77,7 +77,7 @@ write_file.write("Conteúdo original do arquivo foi embora. \neste é o novo con
 write_file.close()
 
 # se o arquivo não for encontrado no caso do 2º arg ser "w" (write), um novo arquivo será criado.
-new_file = open("syntax/cars.txt", "w")
+new_file = open("open_file/cars.txt", "w")
 new_file.write("Argo - Fiat\nGol - Volkswagen\nOnix - Chevrolet")
 # Sempre lembrar de fechar o arquivo
 new_file.close()

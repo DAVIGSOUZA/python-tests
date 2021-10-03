@@ -81,6 +81,15 @@ print(add)
 print(sub)
 
 
+# primeiro argumento com valor padrão, segundo argumento com valor opcional.
+# sem essa sintaxe os argumentos são obrigatórios.
+def args(frase1 = 'valor default', frase2 = None):
+    print(frase1)
+    print(frase2)
+
+args()
+
+
 #deletar variavel, o print causa erro no console pois a variavel não existe mais
 del nomeDaVariavel
 print(nomeDaVariavel)
