@@ -19,7 +19,7 @@ from abc import ABC, abstractmethod
 
 # Herdando ABC informa ao python que uma classe abstrata está sendo criada
 class Abstrata(ABC):
-  # com o decorator @abstractmethos informa ao python que um método abstrata está sendo criado
+  # com o decorator @abstractmethod informa ao python que um método abstrata está sendo criado
   @abstractmethod
   def add(self, a, b):
     pass

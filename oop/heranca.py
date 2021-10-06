@@ -75,7 +75,3 @@ h = HybridChild()
 h.parent_method()
 h.uncle_method()
 h.hybrid_method()
-
-
-
-# continuar a partir de 1:19:52

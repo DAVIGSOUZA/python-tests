@@ -13,6 +13,9 @@ class Courses:
   def __std_username(self):
     print('this is a private method')
 
+c = Courses()
+print(c.student)
+print(c.__username)
 
 class Test:
   a = Courses()
@@ -42,4 +45,3 @@ o._Courses__std_username()
 # console error
 print(o.__username)
 o.__std_username()
-

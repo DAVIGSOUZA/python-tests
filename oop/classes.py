@@ -12,7 +12,7 @@ a = Test()
 
 print(a.x)
 
-
+# definição de métodos da classe
 class calc:
   def sum(self):
     return 2 + 8
@@ -106,19 +106,23 @@ metodo_classe.class_method()
 class Overload:
   def __init__(self):
     print('constructor')
-  
+
+  def soma_tres(a, b, c = 0):
+    print(a + b + c)
+
   def run(self, name = None, age = None):
     if name == None:
       print('no arg')
     else:
       print('arg was inputed')
 
+
+Overload.soma_tres(1,2, 10)
+  
+
 o = Overload()
 o.run()
 o.run('blablabla')
-
-
-
 
 
 # exemplo de overloading

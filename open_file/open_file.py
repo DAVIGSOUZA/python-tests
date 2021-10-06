@@ -33,6 +33,8 @@ read_file.close()
 read_file = open("open_file/example.txt","r") 
 # readline() - retorna conteúdo de uma linha e move o cursor para a próxima
 print(read_file.readline())
+print(read_file.readline())
+print(read_file.readline())
 # Sempre lembrar de fechar o arquivo
 read_file.close()
 

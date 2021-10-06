@@ -15,13 +15,23 @@ class Dog:
   def sound(self):
     print('Woof! woof!')
 
-def makeSound(animal):
-  animal.sound()
+class Bacteria:
+  def infectarPessoas(self):
+    print('pefou dfoença')
+
+# Não tem polimorfismo, gera erro no console
+class SomAnimal:
+  def makeSound(self, animal):
+    animal.sound()
 
 bear = Bear()
 dog = Dog()
+bacteria = Bacteria()
 
-makeSound(bear)
-makeSound(dog)
+som = SomAnimal()
+
+som.makeSound(bear)
+som.makeSound(dog)
+som.makeSound(bacteria)
 
 
