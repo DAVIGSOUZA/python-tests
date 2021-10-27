@@ -1,0 +1,21 @@
+body {
+    margin: 20px 100px;
+    background: #030D0F;
+    color: #2ABAD4;
+}
+
+a {
+   color: #D8DAFF;
+}
+
+header {
+    display: flex;
+}
+
+img {
+    width: 100px;
+}
+
+.logo {
+    margin-right: 20px;
+}

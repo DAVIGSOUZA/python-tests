@@ -1,3 +1,6 @@
+<!-- carrega a pasta de static-->
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +8,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Django test | Home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script type="text/javascript" src="{% static 'js/script.js' %}" defer></script>
 </head>
 <body>
-    <h1>Home</h1>
-    <a href="./contato">contato</a>
+    <header>
+        <div class="logo">
+            <img src="{% static 'img/django-hexbin.png' %}"/>
+        </div>
+        <div>
+            <h1>Home</h1>
+            <a href="./contato">contato</a>
+        </div>
+    </header>
 
     <h2> {{ subtitle }} </h2>
+
+    {% for product in products %}
+        <div>
+            <!-- a sintaxe abaixo informa o nome da rota no arquivo urls.py não a rota em si.-->
+            <a href="{% url 'product' product.id %}">
+                <p>
+                    <strong> {{ product.name }} </strong>
+                </p>
+                <p> Preço: {{ product.price }} | Estoque: {{ product.storage }} </p>
+            </a>
+        </div>
+        <hr/>
+    {% endfor %}
+
+    <button onclick="teste()">teste</button>
 </body>
 </html>
